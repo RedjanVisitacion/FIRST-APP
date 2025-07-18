@@ -11,8 +11,10 @@ class MyFirstApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'My First App',
-      home: LoginScreen()
+      home: LoginScreen(),
+      
     );
   }
 }
