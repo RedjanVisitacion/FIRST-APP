@@ -12,9 +12,10 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+  
       body: ElevatedButton(onPressed: (){
         Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
-      }, child: Text('Login')),
+      }, child: Text('Home')),
          
     );
   }
