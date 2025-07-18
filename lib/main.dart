@@ -1,17 +1,18 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:redjan_app/pages/login_screen.dart';
 
 void main(){
-  runApp(const MyApp());
+  runApp(MyFirstApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MyFirstApp extends StatelessWidget {
+  const MyFirstApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Directionality(
-      textDirection: TextDirection.ltr,
-      child: Center(child: Text('My first practice app')),
+    return MaterialApp(
+      title: 'My First App',
+      home: LoginScreen()
     );
   }
 }
